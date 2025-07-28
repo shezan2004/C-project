@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FECC9E0-06A4-483A-9647-5EF91ABCF0A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Oop_project</RootNamespace>
+    <AssemblyName>Oop project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="address.Designer.cs">
+      <DependentUpon>address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceServiceDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceServiceDashboard.Designer.cs">
+      <DependentUpon>ApplianceServiceDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmation.Designer.cs">
+      <DependentUpon>confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectricalServiceDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectricalServiceDashboard.Designer.cs">
+      <DependentUpon>ElectricalServiceDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee register.Designer.cs">
+      <DependentUpon>Employee register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeDelete.Designer.cs">
+      <DependentUpon>employeeDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeLoginForm.Designer.cs">
+      <DependentUpon>employeeLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPanel.Designer.cs">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HouseShiftingDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseShiftingDashboard.Designer.cs">
+      <DependentUpon>HouseShiftingDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlumbingServiceDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlumbingServiceDashboard.Designer.cs">
+      <DependentUpon>PlumbingServiceDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchEmployee.Designer.cs">
+      <DependentUpon>searchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showAllAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showAllAdmin.Designer.cs">
+      <DependentUpon>showAllAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userAccoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userAccoundForm.Designer.cs">
+      <DependentUpon>userAccoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSignupForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSignupForm2.Designer.cs">
+      <DependentUpon>userSignupForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userMenu.Designer.cs">
+      <DependentUpon>userMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSignupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSignupForm.Designer.cs">
+      <DependentUpon>userSignupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLoginForm.Designer.cs">
+      <DependentUpon>userLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="address.resx">
+      <DependentUpon>address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceServiceDashboard.resx">
+      <DependentUpon>ApplianceServiceDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmation.resx">
+      <DependentUpon>confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectricalServiceDashboard.resx">
+      <DependentUpon>ElectricalServiceDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee register.resx">
+      <DependentUpon>Employee register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeDelete.resx">
+      <DependentUpon>employeeDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeLoginForm.resx">
+      <DependentUpon>employeeLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPanel.resx">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseShiftingDashboard.resx">
+      <DependentUpon>HouseShiftingDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlumbingServiceDashboard.resx">
+      <DependentUpon>PlumbingServiceDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchEmployee.resx">
+      <DependentUpon>searchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showAllAdmin.resx">
+      <DependentUpon>showAllAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userAccoundForm.resx">
+      <DependentUpon>userAccoundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSignupForm2.resx">
+      <DependentUpon>userSignupForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userMenu.resx">
+      <DependentUpon>userMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSignupForm.resx">
+      <DependentUpon>userSignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLoginForm.resx">
+      <DependentUpon>userLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-digital-illustration-depicting-a-bustl_5Ny1MxY3Q6KXVYVYFLXwxw_bZi-w00wS5ydP708V9PJaw.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginoage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-digital-illustration-depicting-a-bustl_5Ny1MxY3Q6KXVYVYFLXwxw_bZi-w00wS5ydP708V9PJaw1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginpage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signuppic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ashunderline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electricalIconLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumbingButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electricalButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houseShiftingButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applianceButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_3d-password-input-illustration-design_10998284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BKash-Logo.wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad-Logo.wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dutch-bangla-rocket-seeklogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
